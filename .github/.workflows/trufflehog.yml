@@ -1,0 +1,13 @@
+name: Trufflehog
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: trufllehog-actions-scan
+      uses: edplato/trufflehog-actions-scan@master
